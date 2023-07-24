@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/inner_frame_layout_padding"
+        app:layout_boxedEdges="all">
+
+        <EditText
+            android:id="@+id/editTextRevenue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="number"
+            android:hint="Ingresos" />
+
+        <EditText
+            android:id="@+id/editTextCost"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="number"
+            android:hint="Costos Totales" />
+
+        <EditText
+            android:id="@+id/editTextFixedCost"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:ems="6"
+            android:inputType="number"
+            android:hint="Costos Fijos" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/calculateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular" />
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resultado: " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.wear.widget.BoxInsetLayout>
